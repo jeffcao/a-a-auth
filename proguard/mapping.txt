@@ -1,0 +1,365 @@
+com.tblin.openconn.OAuthActivity -> com.tblin.openconn.OAuthActivity:
+    android.content.BroadcastReceiver oauthReceiver -> a
+    com.tblin.openconn.oauth.QZoneAuthReceiver qzoneAuthReceiver -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+com.tblin.openconn.OAuthActivity$1 -> com.tblin.openconn.a:
+    com.tblin.openconn.OAuthActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.tblin.openconn.OAuthBtnClickListener -> com.tblin.openconn.b:
+    android.app.Activity activity -> a
+    com.tblin.openconn.OpenPlatform platform -> b
+    int[] $SWITCH_TABLE$com$tblin$openconn$OpenPlatform -> c
+    void onClick(android.view.View) -> onClick
+    int[] $SWITCH_TABLE$com$tblin$openconn$OpenPlatform() -> a
+com.tblin.openconn.OpenPlatform -> com.tblin.openconn.c:
+    com.tblin.openconn.OpenPlatform SINA_WEIBO -> a
+    com.tblin.openconn.OpenPlatform TENCENT_WEIBO -> b
+    com.tblin.openconn.OpenPlatform QZONE -> c
+    com.tblin.openconn.OpenPlatform[] ENUM$VALUES -> d
+    com.tblin.openconn.OpenPlatform[] values() -> values
+    com.tblin.openconn.OpenPlatform valueOf(java.lang.String) -> valueOf
+com.tblin.openconn.ToastUtil -> com.tblin.openconn.d:
+    android.widget.Toast mToast -> a
+    void toast(android.content.Context,java.lang.String) -> a
+com.tblin.openconn.log.OpenConnLogger -> com.tblin.openconn.a.a:
+    com.tblin.openconn.log.OpenLogger logger -> a
+    void i$552c4e01() -> a
+com.tblin.openconn.log.OpenLogger -> com.tblin.openconn.a.b:
+com.tblin.openconn.oauth.OAuther -> com.tblin.openconn.oauth.a:
+    void setParam(android.app.Activity,java.lang.String[]) -> a
+    void oauth() -> a
+com.tblin.openconn.oauth.OAutherFactory -> com.tblin.openconn.oauth.b:
+    int[] $SWITCH_TABLE$com$tblin$openconn$OpenPlatform -> a
+    com.tblin.openconn.oauth.OAuther getOAuther(android.app.Activity,com.tblin.openconn.OpenPlatform,java.lang.String[]) -> a
+    int[] $SWITCH_TABLE$com$tblin$openconn$OpenPlatform() -> a
+com.tblin.openconn.oauth.QZoneAuthReceiver -> com.tblin.openconn.oauth.QZoneAuthReceiver:
+    android.content.Intent broadcast -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void sendBroadcast(android.content.Context) -> a
+    void access$0(com.tblin.openconn.oauth.QZoneAuthReceiver,android.content.Context) -> a
+    android.content.Intent access$1(com.tblin.openconn.oauth.QZoneAuthReceiver) -> a
+com.tblin.openconn.oauth.QZoneAuthReceiver$OpenIdCallback -> com.tblin.openconn.oauth.c:
+    android.content.Context context -> b
+    com.tblin.openconn.oauth.QZoneAuthReceiver this$0 -> a
+    void onFail$4f708078() -> a
+    void onSuccess(java.lang.Object) -> a
+com.tblin.openconn.oauth.QZoneOAuther -> com.tblin.openconn.oauth.d:
+    java.lang.String clientId -> a
+    java.lang.String scope -> b
+    java.lang.String target -> c
+    android.app.Activity activity -> d
+    void setParam(android.app.Activity,java.lang.String[]) -> a
+    void oauth() -> a
+com.tblin.openconn.oauth.SinaWeiboOAuther -> com.tblin.openconn.oauth.e:
+    java.lang.String consumerKey -> a
+    java.lang.String redirectUrl -> b
+    android.app.Activity activity -> c
+    com.weibo.sdk.android.Weibo mWeibo -> d
+    com.weibo.sdk.android.Oauth2AccessToken mToken -> e
+    void oauth() -> a
+    void setParam(android.app.Activity,java.lang.String[]) -> a
+    android.app.Activity access$0(com.tblin.openconn.oauth.SinaWeiboOAuther) -> a
+    void access$1(com.tblin.openconn.oauth.SinaWeiboOAuther,com.weibo.sdk.android.Oauth2AccessToken) -> a
+    com.weibo.sdk.android.Oauth2AccessToken access$2(com.tblin.openconn.oauth.SinaWeiboOAuther) -> b
+com.tblin.openconn.oauth.SinaWeiboOAuther$MyWeiboAuth -> com.tblin.openconn.oauth.f:
+    android.content.Intent broadcast -> b
+    com.tblin.openconn.oauth.SinaWeiboOAuther this$0 -> a
+    void sendBroadcast() -> b
+    void onComplete(android.os.Bundle) -> a
+    void onWeiboException(com.weibo.sdk.android.WeiboException) -> a
+    void onError(com.weibo.sdk.android.WeiboDialogError) -> a
+    void onCancel() -> a
+    void sendErrBroadcast(int) -> a
+com.tblin.openconn.oauth.TencentWeiboOAuther -> com.tblin.openconn.oauth.g:
+    java.lang.String consumerKey -> a
+    java.lang.String redirectUrl -> b
+    java.lang.String consumerSecret -> c
+    android.app.Activity activity -> d
+    com.tencent.weibo.oauthv2.OAuthV2 oAuth -> e
+    void setParam(android.app.Activity,java.lang.String[]) -> a
+    void oauth() -> a
+com.tencent.tauth.TAuthView -> com.tencent.tauth.TAuthView:
+    java.lang.String mGraphURL -> a
+    java.lang.String mCallback -> b
+    android.webkit.WebView mWebView -> c
+    java.lang.String mAuthResult -> d
+    java.lang.String mAccessToken -> e
+    java.lang.String mExpiresIn -> f
+    java.lang.String mRet -> g
+    java.lang.String mErrorDes -> h
+    android.app.ProgressDialog dialog -> i
+    android.widget.TextView titleTxt -> j
+    android.os.Handler handler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void parseResult(java.lang.String) -> a
+    void sendBroadcastResult() -> a
+    java.lang.String getIp() -> b
+    void onDestroy() -> onDestroy
+    android.app.ProgressDialog access$0(com.tencent.tauth.TAuthView) -> a
+    void access$1(com.tencent.tauth.TAuthView,android.app.ProgressDialog) -> a
+    void access$2(com.tencent.tauth.TAuthView,java.lang.String) -> a
+    java.lang.String access$3(com.tencent.tauth.TAuthView) -> b
+    void access$4(com.tencent.tauth.TAuthView,java.lang.String) -> b
+    android.os.Handler access$5(com.tencent.tauth.TAuthView) -> c
+    void access$6(com.tencent.tauth.TAuthView) -> d
+com.tencent.tauth.TAuthView$1 -> com.tencent.tauth.a:
+    com.tencent.tauth.TAuthView this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.tencent.tauth.TAuthView$2 -> com.tencent.tauth.b:
+    com.tencent.tauth.TAuthView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.tencent.tauth.TAuthView$MyWebChromeClient -> com.tencent.tauth.c:
+    com.tencent.tauth.TAuthView this$0 -> a
+    void onReceivedTitle(android.webkit.WebView,java.lang.String) -> onReceivedTitle
+com.tencent.tauth.TAuthView$MyWebViewClient -> com.tencent.tauth.d:
+    com.tencent.tauth.TAuthView this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+com.tencent.tauth.TencentOpenRes -> com.tencent.tauth.TencentOpenRes:
+    android.graphics.drawable.Drawable getCloseBtnSrc(android.content.res.AssetManager) -> a
+    android.graphics.drawable.Drawable getCloseBtnSrcBg(android.content.res.AssetManager) -> b
+    android.graphics.drawable.Drawable getTitleBg(android.content.res.AssetManager) -> c
+com.tencent.tauth.bean.OpenId -> com.tencent.tauth.a.a:
+    java.lang.String mOpenId -> a
+    java.lang.String mClientId -> b
+    java.lang.String getOpenId() -> a
+    java.lang.String getClientId() -> b
+    java.lang.String toString() -> toString
+com.tencent.tauth.http.AsyncHttpRequestRunner -> com.tencent.tauth.b.a:
+    void request$6e166748$21544594(java.lang.String,java.lang.String,com.tencent.tauth.http.IRequestListener) -> a
+com.tencent.tauth.http.AsyncHttpRequestRunner$1 -> com.tencent.tauth.b.b:
+    com.tencent.tauth.http.AsyncHttpRequestRunner this$0 -> a
+    java.lang.String val$url -> b
+    java.lang.String val$httpMethod -> c
+    android.os.Bundle val$parameters -> d
+    com.tencent.tauth.http.IRequestListener val$listener -> e
+    java.lang.Object val$state -> f
+    void run() -> run
+com.tencent.tauth.http.BaseRequestListener -> com.tencent.tauth.b.c:
+    void onComplete(java.lang.String,java.lang.Object) -> a
+    void onFileNotFoundException$64f06040(java.io.FileNotFoundException) -> a
+    void onIOException$7e5565fb(java.io.IOException) -> a
+com.tencent.tauth.http.Callback -> com.tencent.tauth.b.d:
+    void onSuccess(java.lang.Object) -> a
+    void onFail$4f708078() -> a
+com.tencent.tauth.http.ClientHttpRequest -> com.tencent.tauth.b.e:
+    java.lang.String encodePostBody(android.os.Bundle,java.lang.String) -> a
+    java.lang.String encodeUrl(android.os.Bundle) -> a
+    java.lang.String openUrl(java.lang.String,java.lang.String,android.os.Bundle) -> a
+    java.lang.String read(java.io.InputStream) -> a
+com.tencent.tauth.http.ClientHttpRequest$1 -> com.tencent.tauth.b.f:
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+com.tencent.tauth.http.CommonException -> com.tencent.tauth.b.g:
+    int mErrorCode -> a
+com.tencent.tauth.http.IRequestListener -> com.tencent.tauth.b.h:
+    void onComplete(java.lang.String,java.lang.Object) -> a
+    void onIOException$7e5565fb(java.io.IOException) -> a
+    void onFileNotFoundException$64f06040(java.io.FileNotFoundException) -> a
+com.tencent.tauth.http.RequestListenerImpl.OpenIDListener -> com.tencent.tauth.b.a.a:
+    com.tencent.tauth.http.Callback mCallback -> a
+    void onComplete(java.lang.String,java.lang.Object) -> a
+    void onFileNotFoundException$64f06040(java.io.FileNotFoundException) -> a
+    void onIOException$7e5565fb(java.io.IOException) -> a
+com.tencent.tauth.http.TDebug -> com.tencent.tauth.b.i:
+    boolean bDebugMode -> a
+    void i(java.lang.String,java.lang.String) -> a
+com.tencent.weibo.beans.OAuth -> com.tencent.weibo.a.a:
+    java.lang.String seqid -> a
+    java.lang.String clientIP -> b
+    java.lang.String appFrom -> c
+    java.lang.String openid -> d
+    java.lang.String openkey -> e
+    java.lang.String oauthVersion -> f
+    java.lang.String scope -> g
+    int status -> h
+    java.lang.String msg -> i
+    java.util.Random random -> j
+    java.lang.String getOpenid() -> a
+    void setOpenid(java.lang.String) -> a
+    void setOpenkey(java.lang.String) -> b
+    void setStatus(int) -> a
+    void setMsg(java.lang.String) -> c
+com.tencent.weibo.constants.ErrorCodeConstants -> com.tencent.weibo.b.a:
+    com.tencent.weibo.constants.MyErrorCodeHashMap myErrorCodeHashMap -> a
+    java.lang.String getErrmsg(java.lang.String) -> a
+com.tencent.weibo.constants.MyErrorCodeHashMap -> com.tencent.weibo.b.b:
+com.tencent.weibo.oauthv1.OAuthV1 -> com.tencent.weibo.c.a:
+    java.lang.String oauthCallback -> k
+    java.lang.String oauthConsumerKey -> l
+    java.lang.String oauthConsumerSecret -> m
+    java.lang.String oauthSignatureMethod -> n
+    java.lang.String oauthToken -> o
+    java.lang.String oauthTimestamp -> p
+    java.lang.String oauthNonce -> q
+    java.lang.String oauthTokenSecret -> r
+    java.lang.String oauthVerifier -> s
+    java.lang.String getOauthToken() -> b
+    void setOauthVerifier(java.lang.String) -> d
+com.tencent.weibo.oauthv2.OAuthV2 -> com.tencent.weibo.d.a:
+    java.lang.String redirectUri -> k
+    java.lang.String clientId -> l
+    java.lang.String clientSecret -> m
+    java.lang.String responseType -> n
+    java.lang.String type -> o
+    java.lang.String authorizeCode -> p
+    java.lang.String accessToken -> q
+    java.lang.String expiresIn -> r
+    java.lang.String grantType -> s
+    java.lang.String refreshToken -> t
+    java.util.List getAuthorizationParamsList() -> b
+    java.lang.String getClientId() -> c
+    void setClientId(java.lang.String) -> d
+    void setClientSecret(java.lang.String) -> e
+    void setResponseType(java.lang.String) -> f
+    java.lang.String getAccessToken() -> d
+    void setAccessToken(java.lang.String) -> g
+    void setExpiresIn(java.lang.String) -> h
+com.tencent.weibo.oauthv2.OAuthV2Client -> com.tencent.weibo.d.b:
+    java.lang.String TAG -> a
+    com.tencent.weibo.utils.QHttpClient Q_HTTP_CLIENT -> b
+    java.lang.String generateImplicitGrantUrl(com.tencent.weibo.oauthv2.OAuthV2) -> a
+    boolean parseAccessTokenAndOpenId(java.lang.String,com.tencent.weibo.oauthv2.OAuthV2) -> a
+com.tencent.weibo.utils.QHttpClient -> com.tencent.weibo.e.a:
+    java.lang.String TAG -> a
+    org.apache.http.client.HttpClient httpClient -> b
+com.tencent.weibo.utils.QSSLSocketFactory -> com.tencent.weibo.e.b:
+    javax.net.ssl.SSLContext sslcontext -> a
+    javax.net.ssl.SSLContext getEasySSLContext() -> a
+    javax.net.ssl.SSLContext getSSLContext() -> b
+    java.net.Socket connectSocket(java.net.Socket,java.lang.String,int,java.net.InetAddress,int,org.apache.http.params.HttpParams) -> connectSocket
+    java.net.Socket createSocket() -> createSocket
+    boolean isSecure(java.net.Socket) -> isSecure
+    java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.tencent.weibo.utils.QSSLSocketFactory$1 -> com.tencent.weibo.e.c:
+    com.tencent.weibo.utils.QSSLSocketFactory this$0 -> a
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+com.tencent.weibo.utils.QStrOperate -> com.tencent.weibo.e.d:
+    boolean hasValue(java.lang.String) -> a
+    java.lang.String paramEncode(java.lang.String) -> b
+com.tencent.weibo.webview.OAuthV1AuthorizeWebView -> com.tencent.weibo.webview.OAuthV1AuthorizeWebView:
+    com.tencent.weibo.oauthv1.OAuthV1 oAuth -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    com.tencent.weibo.oauthv1.OAuthV1 access$0(com.tencent.weibo.webview.OAuthV1AuthorizeWebView) -> a
+com.tencent.weibo.webview.OAuthV1AuthorizeWebView$1 -> com.tencent.weibo.webview.a:
+    com.tencent.weibo.webview.OAuthV1AuthorizeWebView this$0 -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+com.tencent.weibo.webview.OAuthV2AuthorizeWebView -> com.tencent.weibo.webview.OAuthV2AuthorizeWebView:
+    android.content.Intent intent -> a
+    com.tencent.weibo.oauthv2.OAuthV2 oAuth -> b
+    android.app.ProgressDialog mSpinner -> c
+    boolean sendFlag -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void finish() -> finish
+    void onDestroy() -> onDestroy
+    void sendBroadcast() -> a
+    com.tencent.weibo.oauthv2.OAuthV2 access$0(com.tencent.weibo.webview.OAuthV2AuthorizeWebView) -> a
+    android.content.Intent access$1(com.tencent.weibo.webview.OAuthV2AuthorizeWebView) -> b
+    android.app.ProgressDialog access$2(com.tencent.weibo.webview.OAuthV2AuthorizeWebView) -> c
+com.tencent.weibo.webview.OAuthV2AuthorizeWebView$1 -> com.tencent.weibo.webview.b:
+    com.tencent.weibo.webview.OAuthV2AuthorizeWebView this$0 -> a
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+com.weibo.sdk.android.Oauth2AccessToken -> com.weibo.sdk.android.a:
+    java.lang.String mAccessToken -> a
+    java.lang.String mRefreshToken -> b
+    long mExpiresTime -> c
+    boolean isSessionValid() -> a
+    java.lang.String getToken() -> b
+    java.lang.String getRefreshToken() -> c
+    void setRefreshToken(java.lang.String) -> a
+    long getExpiresTime() -> d
+    void setExpiresIn(java.lang.String) -> b
+    void setToken(java.lang.String) -> c
+com.weibo.sdk.android.Weibo -> com.weibo.sdk.android.b:
+    java.lang.String URL_OAUTH2_ACCESS_AUTHORIZE -> a
+    com.weibo.sdk.android.Weibo mWeiboInstance -> f
+    java.lang.String app_key -> b
+    java.lang.String redirecturl -> c
+    com.weibo.sdk.android.Oauth2AccessToken accessToken -> d
+    boolean isWifi -> e
+    com.weibo.sdk.android.Weibo getInstance(java.lang.String,java.lang.String) -> a
+    void authorize(android.content.Context,com.weibo.sdk.android.WeiboAuthListener) -> a
+com.weibo.sdk.android.Weibo$1 -> com.weibo.sdk.android.c:
+    com.weibo.sdk.android.Weibo this$0 -> a
+    com.weibo.sdk.android.WeiboAuthListener val$listener -> b
+    void onComplete(android.os.Bundle) -> a
+    void onError(com.weibo.sdk.android.WeiboDialogError) -> a
+    void onWeiboException(com.weibo.sdk.android.WeiboException) -> a
+    void onCancel() -> a
+com.weibo.sdk.android.WeiboAuthListener -> com.weibo.sdk.android.d:
+    void onComplete(android.os.Bundle) -> a
+    void onWeiboException(com.weibo.sdk.android.WeiboException) -> a
+    void onError(com.weibo.sdk.android.WeiboDialogError) -> a
+    void onCancel() -> a
+com.weibo.sdk.android.WeiboDialog -> com.weibo.sdk.android.e:
+    android.widget.FrameLayout$LayoutParams FILL -> a
+    java.lang.String mUrl -> b
+    com.weibo.sdk.android.WeiboAuthListener mListener -> c
+    android.app.ProgressDialog mSpinner -> d
+    android.webkit.WebView mWebView -> e
+    android.widget.RelativeLayout webViewContainer -> f
+    android.widget.RelativeLayout mContent -> g
+    int theme -> h
+    int left_margin -> i
+    int top_margin -> j
+    int right_margin -> k
+    int bottom_margin -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    void onBack() -> a
+    boolean parseDimens() -> b
+    com.weibo.sdk.android.WeiboAuthListener access$0(com.weibo.sdk.android.WeiboDialog) -> a
+    void access$1$4ff9aead(com.weibo.sdk.android.WeiboDialog,java.lang.String) -> a
+    android.app.ProgressDialog access$2(com.weibo.sdk.android.WeiboDialog) -> b
+    android.webkit.WebView access$3(com.weibo.sdk.android.WeiboDialog) -> c
+com.weibo.sdk.android.WeiboDialog$1 -> com.weibo.sdk.android.f:
+    com.weibo.sdk.android.WeiboDialog this$0 -> a
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+com.weibo.sdk.android.WeiboDialog$WeiboWebViewClient -> com.weibo.sdk.android.g:
+    com.weibo.sdk.android.WeiboDialog this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+com.weibo.sdk.android.WeiboDialogError -> com.weibo.sdk.android.h:
+    int mErrorCode -> a
+    java.lang.String mFailingUrl -> b
+com.weibo.sdk.android.WeiboException -> com.weibo.sdk.android.i:
+    int statusCode -> a
+com.weibo.sdk.android.WeiboParameters -> com.weibo.sdk.android.j:
+    java.util.ArrayList mKeys -> a
+    java.util.ArrayList mValues -> b
+    void add(java.lang.String,java.lang.String) -> a
+    java.lang.String getKey(int) -> a
+    java.lang.String getValue(java.lang.String) -> a
+    java.lang.String getValue(int) -> b
+    int size() -> a
+com.weibo.sdk.android.net.NetStateManager -> com.weibo.sdk.android.net.NetStateManager:
+    android.content.Context mContext -> b
+    com.weibo.sdk.android.net.NetStateManager$NetState CUR_NETSTATE -> a
+    void access$0(android.content.Context) -> a
+com.weibo.sdk.android.net.NetStateManager$NetState -> com.weibo.sdk.android.net.a:
+    com.weibo.sdk.android.net.NetStateManager$NetState Mobile -> a
+    com.weibo.sdk.android.net.NetStateManager$NetState WIFI -> b
+    com.weibo.sdk.android.net.NetStateManager$NetState NOWAY -> c
+    com.weibo.sdk.android.net.NetStateManager$NetState[] ENUM$VALUES -> d
+    com.weibo.sdk.android.net.NetStateManager$NetState[] values() -> values
+    com.weibo.sdk.android.net.NetStateManager$NetState valueOf(java.lang.String) -> valueOf
+com.weibo.sdk.android.net.NetStateManager$NetStateReceive -> com.weibo.sdk.android.net.NetStateManager$NetStateReceive:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.weibo.sdk.android.util.Utility -> com.weibo.sdk.android.a.a:
+    char[] encodes -> a
+    byte[] decodes -> b
+    android.os.Bundle parseUrl(java.lang.String) -> a
+    android.os.Bundle decodeUrl(java.lang.String) -> b
+    java.lang.String encodeUrl(com.weibo.sdk.android.WeiboParameters) -> a
+    void showAlert(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean isWifi(android.content.Context) -> a

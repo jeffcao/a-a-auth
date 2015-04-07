@@ -12,6 +12,7 @@ import com.example.openinteconnect.R;
 import com.tblin.openconn.oauth.OAuther;
 import com.tblin.openconn.oauth.QZoneAuthReceiver;
 import com.tencent.tauth.TAuthView;
+import com.tencent.tauth.TencentOpenHost;
 
 /**
  * 启动这个Activity要在Intent中传入相关的授权信息 <li>
@@ -71,7 +72,7 @@ public class OAuthActivity extends Activity {
 		registerReceiver(oauthReceiver, filter);
 		qzoneAuthReceiver = new QZoneAuthReceiver();
 		registerReceiver(qzoneAuthReceiver, new IntentFilter(
-				TAuthView.AUTH_BROADCAST));
+				TencentOpenHost.AUTH_BROADCAST));
 	}
 
 	private void unregistReceiver() {

@@ -3,6 +3,7 @@ package com.tblin.openconn.oauth;
 import com.tblin.openconn.OpenPlatform;
 import com.tencent.tauth.TAuthView;
 import com.tencent.tauth.TencentOpenAPI;
+import com.tencent.tauth.TencentOpenHost;
 import com.tencent.tauth.bean.OpenId;
 import com.tencent.tauth.http.Callback;
 
@@ -28,8 +29,8 @@ public class QZoneAuthReceiver extends BroadcastReceiver {
 		// String raw = exts.getString("raw");
 		// String expires_in = exts.getString(TAuthView.EXPIRES_IN);
 		// String error_des = exts.getString(TAuthView.ERROR_DES);
-		String access_token = exts.getString(TAuthView.ACCESS_TOKEN);
-		String error_ret = exts.getString(TAuthView.ERROR_RET);
+		String access_token = exts.getString(TencentOpenHost.ACCESS_TOKEN);
+		String error_ret = exts.getString(TencentOpenHost.ERROR_RET);
 		if (access_token != null && error_ret == null) {
 			broadcast.putExtra("access_token", access_token);
 			TencentOpenAPI.openid(access_token, new OpenIdCallback(context));
@@ -58,6 +59,12 @@ public class QZoneAuthReceiver extends BroadcastReceiver {
 			broadcast.putExtra("open_id", openId.getOpenId());
 			broadcast.putExtra("client_id", openId.getClientId());
 			sendBroadcast(context);
+		}
+
+		@Override
+		public void onCancel(int arg0) {
+			// TODO Auto-generated method stub
+			
 		}
 	}
 

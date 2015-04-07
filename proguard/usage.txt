@@ -1,0 +1,350 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+android.net.http.SslError
+com.example.openinteconnect.BuildConfig
+com.example.openinteconnect.R
+com.example.openinteconnect.R$attr
+com.example.openinteconnect.R$dimen
+com.example.openinteconnect.R$drawable
+com.example.openinteconnect.R$id
+com.example.openinteconnect.R$layout
+com.example.openinteconnect.R$menu
+com.example.openinteconnect.R$string
+com.example.openinteconnect.R$style
+com.tblin.openconn.OAuthActivity:
+    public static final java.lang.String SWEIBO_CONSUMER_KEY
+    public static final java.lang.String SWEIBO_REDIRECT_URL
+    public static final java.lang.String TWEIBO_CONSUMER_KEY
+    public static final java.lang.String TWEIBO_CONSUMER_SECRET
+    public static final java.lang.String TWEIBO_REDIRECT_URL
+    public static final java.lang.String QQ_CLIENT_ID
+    public static final java.lang.String QQ_SCOPE
+    public static final java.lang.String ACTION_OAUTH_COMPLETE
+com.tblin.openconn.ToastUtil:
+    6:6:public ToastUtil()
+com.tblin.openconn.api.ApiExecuteCallback
+com.tblin.openconn.api.ApiExecutor
+com.tblin.openconn.api.ApiExecutorFactory
+com.tblin.openconn.api.GeneralApiExecutor
+com.tblin.openconn.api.QZoneApiExecutor
+com.tblin.openconn.api.QZoneApiExecutor$1
+com.tblin.openconn.api.SinaWeiboApiExecutor
+com.tblin.openconn.api.SinaWeiboApiExecutor$1
+com.tblin.openconn.api.TencentWeiboApiExecutor
+com.tblin.openconn.api.TencentWeiboApiExecutor$1
+com.tblin.openconn.log.OpenConnLogger:
+    3:3:public OpenConnLogger()
+    12:14:public static void setLogger(com.tblin.openconn.log.OpenLogger)
+    26:28:public static void d(java.lang.String,java.lang.String)
+    31:33:public static void e(java.lang.String,java.lang.String)
+    36:38:public static void w(java.lang.String,java.lang.String)
+com.tblin.openconn.log.OpenLogger:
+    public abstract void d(java.lang.String,java.lang.String)
+    public abstract void e(java.lang.String,java.lang.String)
+    public abstract void w(java.lang.String,java.lang.String)
+com.tblin.openconn.oauth.OAuthFlag
+com.tblin.openconn.oauth.OAuthRecord
+com.tblin.openconn.oauth.OAuther:
+    public static final java.lang.String OAUTH_FINISH_BROADCAST
+com.tblin.openconn.oauth.OAutherFactory:
+    7:7:public OAutherFactory()
+com.tblin.openconn.oauth.QZoneOAuthRecord
+com.tblin.openconn.oauth.SinaWeiboOAuthRecord
+com.tblin.openconn.oauth.TencentOAuthRecord
+com.tblin.openconn.oauth.TencentWeiboOAuthRecord
+com.tencent.tauth.TAuthView:
+    public static final java.lang.String AUTH_BROADCAST
+    public static final java.lang.String CLIENT_ID
+    public static final java.lang.String SCOPE
+    public static final java.lang.String CALLBACK
+    public static final java.lang.String TARGET
+    public static final java.lang.String ACCESS_TOKEN
+    public static final java.lang.String EXPIRES_IN
+    public static final java.lang.String ERROR_RET
+    public static final java.lang.String ERROR_DES
+com.tencent.tauth.TAuthView$MyWebViewClient:
+    319:320:public void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError)
+com.tencent.tauth.TencentOpenAPI:
+    private static final java.lang.String TAG
+    25:25:public TencentOpenAPI()
+    49:51:public static void userInfo(java.lang.String,java.lang.String,java.lang.String,com.tencent.tauth.http.Callback)
+    63:65:public static void userProfile(java.lang.String,java.lang.String,java.lang.String,com.tencent.tauth.http.Callback)
+    78:85:public static void addShare(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle,com.tencent.tauth.http.Callback)
+    110:117:public static void addTopic(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle,com.tencent.tauth.http.Callback)
+    131:133:public static void listAlbum(java.lang.String,java.lang.String,java.lang.String,com.tencent.tauth.http.Callback)
+    148:154:public static void addAlbum(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle,com.tencent.tauth.http.Callback)
+    169:175:public static void uploadPic(java.lang.String,java.lang.String,java.lang.String,android.os.Bundle,com.tencent.tauth.http.Callback)
+    183:185:private static void asyncPost(java.lang.String,android.os.Bundle,com.tencent.tauth.http.IRequestListener)
+com.tencent.tauth.TencentOpenHost
+com.tencent.tauth.TencentOpenRes:
+    15:16:private TencentOpenRes(android.content.Context)
+    54:61:public static android.graphics.drawable.Drawable getBigLoginBtn(android.content.res.AssetManager)
+    65:72:public static android.graphics.drawable.Drawable getLoginBtn(android.content.res.AssetManager)
+    76:83:public static android.graphics.drawable.Drawable getSmallLoginBtn(android.content.res.AssetManager)
+    87:94:public static android.graphics.drawable.Drawable getLogoutBtn(android.content.res.AssetManager)
+    98:105:public static android.graphics.drawable.Drawable getSmallLogoutBtn(android.content.res.AssetManager)
+com.tencent.tauth.bean.Album
+com.tencent.tauth.bean.OpenId:
+    21:22:public void setOpenId(java.lang.String)
+    30:31:public void setClientId(java.lang.String)
+com.tencent.tauth.bean.Pic
+com.tencent.tauth.bean.TopicRichInfo
+com.tencent.tauth.bean.UserInfo
+com.tencent.tauth.bean.UserProfile
+com.tencent.tauth.http.AsyncHttpPostRunner
+com.tencent.tauth.http.AsyncHttpPostRunner$1
+com.tencent.tauth.http.BaseRequestListener:
+    private static final java.lang.String TAG
+com.tencent.tauth.http.ClientHttpRequest:
+    private static final java.lang.String TAG
+    24:24:public ClientHttpRequest()
+    199:210:public static int getFileSizeAtURL(java.net.URL)
+com.tencent.tauth.http.CommonException:
+    private static final long serialVersionUID
+    private java.lang.String mErrorType
+    15:18:public CommonException(java.lang.String,java.lang.String,int)
+    21:21:public int getErrorCode()
+    25:25:public java.lang.String getErrorType()
+com.tencent.tauth.http.ParseResoneJson:
+    7:7:public ParseResoneJson()
+com.tencent.tauth.http.RequestListenerImpl.AddAlbumListener
+com.tencent.tauth.http.RequestListenerImpl.AddShareListener
+com.tencent.tauth.http.RequestListenerImpl.AddTopicListener
+com.tencent.tauth.http.RequestListenerImpl.AddWeiBoListener
+com.tencent.tauth.http.RequestListenerImpl.ListAlbumListener
+com.tencent.tauth.http.RequestListenerImpl.OpenIDListener:
+    private static final java.lang.String TAG
+com.tencent.tauth.http.RequestListenerImpl.UploadPicListener
+com.tencent.tauth.http.RequestListenerImpl.UserInfoListener
+com.tencent.tauth.http.RequestListenerImpl.UserProfileListener
+com.tencent.tauth.http.ResponseData
+com.tencent.tauth.http.TDebug:
+    7:7:public TDebug()
+    12:13:public static void setMode(boolean)
+    22:25:public static void d(java.lang.String,java.lang.String)
+    28:29:public static void msg(java.lang.String,android.content.Context)
+com.tencent.weibo.api.BasicAPI
+com.tencent.weibo.api.FriendsAPI
+com.tencent.weibo.api.InfoAPI
+com.tencent.weibo.api.PrivateAPI
+com.tencent.weibo.api.RequestAPI
+com.tencent.weibo.api.SearchAPI
+com.tencent.weibo.api.StatusesAPI
+com.tencent.weibo.api.TAPI
+com.tencent.weibo.api.UserAPI
+com.tencent.weibo.beans.OAuth:
+    private static final long serialVersionUID
+    32:38:public java.util.List getCommonParamsList()
+    46:51:public java.lang.String generateSeqId()
+    56:56:public java.lang.String getSeqId()
+    61:62:public void setSeqId(java.lang.String)
+    66:66:public java.lang.String getClientIP()
+    71:72:public void setClientIP(java.lang.String)
+    76:76:public java.lang.String getAppFrom()
+    82:83:public void setAppFrom(java.lang.String)
+    97:97:public java.lang.String getOpenkey()
+    107:107:public java.lang.String getOauthVersion()
+    113:114:public void setOauthVersion(java.lang.String)
+    118:118:public java.lang.String getScope()
+    123:124:public void setScope(java.lang.String)
+    133:133:public int getStatus()
+    148:148:public java.lang.String getMsg()
+com.tencent.weibo.beans.RouteCfg
+com.tencent.weibo.constants.APIConstants
+com.tencent.weibo.constants.ErrorCodeConstants:
+    8:8:public ErrorCodeConstants()
+com.tencent.weibo.constants.MyErrorCodeHashMap:
+    private static final long serialVersionUID
+com.tencent.weibo.constants.OAuthConstants
+com.tencent.weibo.exceptions.OAuthClientException
+com.tencent.weibo.exceptions.QweibosdkException
+com.tencent.weibo.oauthv1.Base64Encoder
+com.tencent.weibo.oauthv1.OAuthV1:
+    private static final long serialVersionUID
+    41:44:public OAuthV1(java.lang.String)
+    54:59:public OAuthV1(java.lang.String,java.lang.String,java.lang.String)
+    67:67:private java.lang.String generateTimeStamp()
+    76:81:private java.lang.String generateNonce()
+    85:94:public java.util.List getParamsList()
+    98:100:public java.util.List getAccessParams()
+    104:113:public java.util.List getTokenParamsList()
+    118:118:public java.lang.String getOauthConsumerKey()
+    123:124:public void setOauthConsumerKey(java.lang.String)
+    128:128:public java.lang.String getOauthSignatureMethod()
+    133:134:public void setOauthSignatureMethod(java.lang.String)
+    138:138:public java.lang.String getOauthConsumerSecret()
+    143:144:public void setOauthConsumerSecret(java.lang.String)
+    153:154:public void setOauthToken(java.lang.String)
+    158:158:public java.lang.String getOauthTimestamp()
+    163:164:public void setOauthTimestamp(java.lang.String)
+    168:168:public java.lang.String getOauthNonce()
+    173:174:public void setOauthNonce(java.lang.String)
+    178:178:public java.lang.String getOauthCallback()
+    183:184:public void setOauthCallback(java.lang.String)
+    188:188:public java.lang.String getOauthTokenSecret()
+    193:194:public void setOauthTokenSecret(java.lang.String)
+    198:198:public java.lang.String getOauthVerifier()
+com.tencent.weibo.oauthv1.OAuthV1Client
+com.tencent.weibo.oauthv1.OAuthV1Client$1
+com.tencent.weibo.oauthv1.OAuthV1Request
+com.tencent.weibo.oauthv2.OAuthV2:
+    private static final long serialVersionUID
+    52:57:public OAuthV2(java.lang.String,java.lang.String,java.lang.String)
+    70:76:public java.util.List getAccessTokenByCodeParamsList()
+    84:91:public java.util.List getTokenParamsList()
+    96:96:public java.lang.String getRedirectUri()
+    101:102:public void setRedirectUri(java.lang.String)
+    116:116:public java.lang.String getResponeType()
+    121:121:public java.lang.String getClientSecret()
+    136:136:public java.lang.String getType()
+    141:142:public void setType(java.lang.String)
+    146:146:public java.lang.String getAuthorizeCode()
+    151:152:public void setAuthorizeCode(java.lang.String)
+    164:164:public java.lang.String getExpiresIn()
+    174:174:public java.lang.String getGrantType()
+    179:180:public void setGrantType(java.lang.String)
+    184:184:public java.lang.String getRefreshToken()
+    189:190:public void setRefreshToken(java.lang.String)
+com.tencent.weibo.oauthv2.OAuthV2Client:
+    21:22:private OAuthV2Client()
+    32:39:public static java.lang.String generateAuthorizationURL(com.tencent.weibo.oauthv2.OAuthV2)
+    51:59:public static boolean setAuthorization(java.lang.String,java.lang.String,java.lang.String,com.tencent.weibo.oauthv2.OAuthV2)
+    70:106:public static boolean parseAuthorization(java.lang.String,com.tencent.weibo.oauthv2.OAuthV2)
+    117:135:public static boolean accessToken(com.tencent.weibo.oauthv2.OAuthV2)
+    165:193:public static boolean parseAccessToken(java.lang.String,com.tencent.weibo.oauthv2.OAuthV2)
+    252:252:public static com.tencent.weibo.utils.QHttpClient getQHttpClient()
+    256:257:public static void setQHttpClient(com.tencent.weibo.utils.QHttpClient)
+com.tencent.weibo.oauthv2.OAuthV2Request
+com.tencent.weibo.utils.QArrayList
+com.tencent.weibo.utils.QHttpClient:
+    public static final int CONNECTION_TIMEOUT
+    public static final int CON_TIME_OUT_MS
+    public static final int SO_TIME_OUT_MS
+    public static final int MAX_CONNECTIONS_PER_HOST
+    public static final int MAX_TOTAL_CONNECTIONS
+    107:127:public java.lang.String httpGet(java.lang.String,java.lang.String)
+    139:167:public java.lang.String httpPost(java.lang.String,java.lang.String)
+    181:228:public java.lang.String httpPostWithFile(java.lang.String,java.lang.String,java.util.List)
+    236:240:public void shutdownConnection()
+com.tencent.weibo.utils.QStrOperate:
+    19:20:private QStrOperate()
+    58:85:public static java.lang.String ParamDecode(java.lang.String)
+    95:114:public static java.util.List getQueryParamsList(java.lang.String)
+    141:178:public static java.lang.String getTimeState(java.lang.String)
+com.tencent.weibo.webview.OAuthV1AuthorizeWebView:
+    public static final int RESULT_CODE
+    private static final java.lang.String TAG
+com.weibo.sdk.android.Oauth2AccessToken:
+    31:44:public Oauth2AccessToken(java.lang.String)
+com.weibo.sdk.android.Weibo:
+    public static final java.lang.String KEY_TOKEN
+    public static final java.lang.String KEY_EXPIRES
+    public static final java.lang.String KEY_REFRESHTOKEN
+    52:54:public void setupConsumerConfig(java.lang.String,java.lang.String)
+com.weibo.sdk.android.WeiboDialog:
+    private static final java.lang.String TAG
+com.weibo.sdk.android.WeiboDialogError:
+    private static final long serialVersionUID
+    22:22:int getErrorCode()
+    29:29:java.lang.String getFailingUrl()
+com.weibo.sdk.android.WeiboException:
+    private static final long serialVersionUID
+    19:20:public WeiboException(java.lang.Exception)
+    28:29:public WeiboException(java.lang.String,java.lang.Exception)
+    32:34:public WeiboException(java.lang.String,java.lang.Exception,int)
+    37:37:public int getStatusCode()
+    46:47:public WeiboException(java.lang.String,java.lang.Throwable)
+    50:51:public WeiboException(java.lang.Throwable)
+    54:56:public WeiboException(int)
+    59:60:public void setStatusCode(int)
+com.weibo.sdk.android.WeiboParameters:
+    30:32:public void add(java.lang.String,int)
+    35:37:public void add(java.lang.String,long)
+    40:46:public void remove(java.lang.String)
+    49:54:public void remove(int)
+    95:99:public void addAll(com.weibo.sdk.android.WeiboParameters)
+    102:104:public void clear()
+com.weibo.sdk.android.api.AccountAPI
+com.weibo.sdk.android.api.ActivityInvokeAPI
+com.weibo.sdk.android.api.CommentsAPI
+com.weibo.sdk.android.api.CommonAPI
+com.weibo.sdk.android.api.FavoritesAPI
+com.weibo.sdk.android.api.FriendshipsAPI
+com.weibo.sdk.android.api.PlaceAPI
+com.weibo.sdk.android.api.RegisterAPI
+com.weibo.sdk.android.api.SearchAPI
+com.weibo.sdk.android.api.ShortUrlAPI
+com.weibo.sdk.android.api.StatusesAPI
+com.weibo.sdk.android.api.SuggestionsAPI
+com.weibo.sdk.android.api.TagsAPI
+com.weibo.sdk.android.api.TrendsAPI
+com.weibo.sdk.android.api.UsersAPI
+com.weibo.sdk.android.api.WeiboAPI
+com.weibo.sdk.android.api.WeiboAPI$AUTHOR_FILTER
+com.weibo.sdk.android.api.WeiboAPI$CAPITAL
+com.weibo.sdk.android.api.WeiboAPI$COMMENTS_TYPE
+com.weibo.sdk.android.api.WeiboAPI$COUNT_TYPE
+com.weibo.sdk.android.api.WeiboAPI$EMOTION_TYPE
+com.weibo.sdk.android.api.WeiboAPI$FEATURE
+com.weibo.sdk.android.api.WeiboAPI$FRIEND_TYPE
+com.weibo.sdk.android.api.WeiboAPI$LANGUAGE
+com.weibo.sdk.android.api.WeiboAPI$RANGE
+com.weibo.sdk.android.api.WeiboAPI$SCHOOL_TYPE
+com.weibo.sdk.android.api.WeiboAPI$SORT
+com.weibo.sdk.android.api.WeiboAPI$SORT2
+com.weibo.sdk.android.api.WeiboAPI$SORT3
+com.weibo.sdk.android.api.WeiboAPI$SRC_FILTER
+com.weibo.sdk.android.api.WeiboAPI$STATUSES_TYPE
+com.weibo.sdk.android.api.WeiboAPI$TYPE
+com.weibo.sdk.android.api.WeiboAPI$TYPE_FILTER
+com.weibo.sdk.android.api.WeiboAPI$USER_CATEGORY
+com.weibo.sdk.android.net.AsyncWeiboRunner
+com.weibo.sdk.android.net.AsyncWeiboRunner$1
+com.weibo.sdk.android.net.HttpManager
+com.weibo.sdk.android.net.HttpManager$MySSLSocketFactory
+com.weibo.sdk.android.net.HttpManager$MySSLSocketFactory$1
+com.weibo.sdk.android.net.NetStateManager:
+    18:18:public NetStateManager()
+    48:62:public static org.apache.http.HttpHost getAPN()
+com.weibo.sdk.android.net.NetStateManager$NetStateReceive:
+    final synthetic com.weibo.sdk.android.net.NetStateManager this$0
+    27:27:public NetStateManager$NetStateReceive(com.weibo.sdk.android.net.NetStateManager)
+com.weibo.sdk.android.net.RequestListener
+com.weibo.sdk.android.util.BitmapHelper
+com.weibo.sdk.android.util.Utility:
+    31:31:public Utility()
+    87:104:public static java.lang.String encodeParameters(com.weibo.sdk.android.WeiboParameters)
+    116:119:private static boolean isBundleEmpty(com.weibo.sdk.android.WeiboParameters)
+    127:148:public static java.lang.String encodeBase62(byte[])
+    156:178:public static byte[] decodeBase62(java.lang.String)
+    182:196:private static boolean deleteDependon(java.io.File,int)
+    202:206:private static void mkdirs(java.io.File)
+    209:213:private static void createNewFile(java.io.File)
+    216:220:private static void delete(java.io.File)
+    223:237:private static boolean __createNewFile(java.io.File)
+    243:244:private static boolean deleteDependon(java.lang.String,int)
+    249:249:private static boolean deleteDependon(java.lang.String)
+    255:255:private static boolean doesExisted(java.io.File)
+    260:261:private static boolean doesExisted(java.lang.String)
+    265:271:private static void makesureParentExist(java.io.File)
+    282:288:private static void makesureFileExist(java.io.File)
+    292:295:private static void makesureFileExist(java.lang.String)
+    258:258:static synthetic boolean access$0(java.lang.String)
+    247:247:static synthetic boolean access$1(java.lang.String)
+    290:290:static synthetic void access$2(java.lang.String)
+com.weibo.sdk.android.util.Utility$UploadImageUtils
+org.apache.http.entity.mime.FormBodyPart
+org.apache.http.entity.mime.Header
+org.apache.http.entity.mime.HttpMultipart
+org.apache.http.entity.mime.HttpMultipart$1
+org.apache.http.entity.mime.HttpMultipartMode
+org.apache.http.entity.mime.MIME
+org.apache.http.entity.mime.MinimalField
+org.apache.http.entity.mime.MultipartEntity
+org.apache.http.entity.mime.content.AbstractContentBody
+org.apache.http.entity.mime.content.ByteArrayBody
+org.apache.http.entity.mime.content.ContentBody
+org.apache.http.entity.mime.content.ContentDescriptor
+org.apache.http.entity.mime.content.FileBody
+org.apache.http.entity.mime.content.InputStreamBody
+org.apache.http.entity.mime.content.StringBody

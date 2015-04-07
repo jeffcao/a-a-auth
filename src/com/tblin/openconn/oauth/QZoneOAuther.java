@@ -4,11 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 
 import com.tencent.tauth.TAuthView;
+import com.tencent.tauth.TencentOpenHost;
 
 public class QZoneOAuther implements OAuther{
 	
 	private String clientId;
-	private String scope = "get_user_info,get_user_profile,add_share,add_topic,list_album,upload_pic,add_album";
+	private String scope = "get_simple_userinfo,get_user_profile,add_share,add_topic,list_album,upload_pic,add_album";
 	private String target = "_slef";
 	private Activity activity;
 
@@ -29,9 +30,9 @@ public class QZoneOAuther implements OAuther{
 	@Override
 	public void oauth() {
 		Intent intent = new Intent(activity, com.tencent.tauth.TAuthView.class);
-		intent.putExtra(TAuthView.CLIENT_ID, clientId);
-		intent.putExtra(TAuthView.SCOPE, scope);
-		intent.putExtra(TAuthView.TARGET, target);
+		intent.putExtra(TencentOpenHost.CLIENT_ID, clientId);
+		intent.putExtra(TencentOpenHost.SCOPE, scope);
+		intent.putExtra(TencentOpenHost.TARGET, target);
 		activity.startActivity(intent);
 	}
 	

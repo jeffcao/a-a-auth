@@ -38,6 +38,12 @@ class QZoneApiExecutor implements ApiExecutor {
 			public void onFail(int arg0, String arg1) {
 				callback.onFail(arg0);
 			}
+
+			@Override
+			public void onCancel(int arg0) {
+				// TODO Auto-generated method stub
+				
+			}
 		};
 		TencentOpenAPI.userInfo(params[2], params[1], params[0], mCallback);
 	}

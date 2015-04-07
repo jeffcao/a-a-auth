@@ -14,7 +14,7 @@ class ApiExecutorFactory {
 			executor = new TencentWeiboApiExecutor();
 			break;
 		case QZONE:
-			executor = new QZoneApiExecutor();
+			executor = new QZoneApiExecutorV2();
 			break;
 		}
 		return executor;

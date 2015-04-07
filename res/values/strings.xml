@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">OpenInteconnect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="login_sina_weibo">使用新浪微博登录</string>
+    <string name="login_tencent_weibo">使用腾讯微博登录</string>
+    <string name="login_qq">使用QQ号码登录</string>
+    <string name="notify_no_net">当前无网络，请打开网络</string>
+
+</resources>
